@@ -1,3 +1,4 @@
 include ':moxm-demos'
 include ':library-smenu'
 include ':library-ebus'
+include ':moxm-themes'
