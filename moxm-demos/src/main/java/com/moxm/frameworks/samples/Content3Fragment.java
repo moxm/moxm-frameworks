@@ -1,4 +1,4 @@
-package cn.neel.sample.compat;
+package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import com.moxm.frameworks.samples.R;
 
 /**
  * Created by Richard on 15/6/2.

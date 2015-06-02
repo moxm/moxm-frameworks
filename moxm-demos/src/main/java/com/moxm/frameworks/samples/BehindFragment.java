@@ -1,4 +1,4 @@
-package cn.neel.sample.compat;
+package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,8 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import cn.neel.sample.compat.event.ContentFragmentEvent;
-import cn.neel.sample.compat.otto.BusProvider;
+import com.moxm.frameworks.samples.event.ContentFragmentEvent;
+import com.moxm.frameworks.samples.otto.BusProvider;
+
 
 /**
  * Created by Richard on 15/6/2.

@@ -1,4 +1,4 @@
-package cn.neel.sample.compat;
+package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -6,10 +6,11 @@ import android.view.MenuItem;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
+import com.moxm.frameworks.samples.event.ContentFragmentEvent;
+import com.moxm.frameworks.samples.otto.BusProvider;
+import com.moxm.frameworks.samples.R;
 import com.squareup.otto.Subscribe;
 
-import cn.neel.sample.compat.event.ContentFragmentEvent;
-import cn.neel.sample.compat.otto.BusProvider;
 
 /**
  * Created by Richard on 15/5/29.

@@ -1,4 +1,4 @@
-package cn.neel.sample.compat;
+package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,8 +19,9 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.moxm.frameworks.samples.R;
 
-;
+
 
 /**
  * Created by Richard on 15/6/2.

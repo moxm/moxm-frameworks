@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="mo_primary_material_dark">#ff00ada7</color>
-    <color name="mo_primary_material_light">#ffefefef</color>
-    <color name="mo_accent_material_dark">#ff7ec486</color>
 
 </resources>
