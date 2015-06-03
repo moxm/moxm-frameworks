@@ -19,9 +19,17 @@
 
         <item name="actionBarSize">@dimen/mo_action_bar_default_height_material</item>
 
+        <!-- 去除ActionBar下面阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight & colorSwitchThumbNormal. -->
 
+    </style>
+
+    <style name="Theme.Moxm.Light.NoActionBar" parent="Theme.Moxm.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 

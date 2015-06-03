@@ -11,13 +11,13 @@
 
     <Button
         android:id="@+id/button2"
-        android:text="Two"
+        android:text="Event Bus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/button3"
-        android:text="Three"
+        android:text="UI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

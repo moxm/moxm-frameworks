@@ -90,7 +90,7 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
                 BusProvider.getInstance().post(produceContentEvent(content2));
                 break;
             case R.id.button3:
-                Fragment content3 = new Content3Fragment();
+                Fragment content3 = new UiFragment();
                 BusProvider.getInstance().post(produceContentEvent(content3));
                 break;
         }
