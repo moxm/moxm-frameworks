@@ -30,7 +30,6 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-
     <!-- Base application theme. -->
     <style name="Theme.Moxm" parent="Theme.AppCompat">
         <!-- colorPrimary is used for the default action bar background -->
@@ -49,6 +48,8 @@
         <!-- You can also set colorControlNormal, colorControlActivated
              colorControlHighlight & colorSwitchThumbNormal. -->
 
+        <item name="toolbarNavigationButtonStyle">@style/Widget.Moxm.Toolbar.Button.Navigation</item>
+        <item name="borderlessButtonStyle">@style/Widget.Moxm.Button.Borderless</item>
         <item name="homeAsUpIndicator">@drawable/mo_ic_ab_back_mtrl_am_alpha</item>
         <item name="actionBarStyle">@style/Widget.Moxm.ActionBar.Solid</item>
         <item name="actionButtonStyle">@style/Widget.Moxm.ActionButton</item>
@@ -94,14 +95,23 @@
     </style>
 
 
+    <style name="Widget.Moxm.Button.Borderless" parent="Widget.AppCompat.Button.Borderless">
+    </style>
+    <!-- homeAsUpIndicator 按钮 -->
+    <style name="Widget.Moxm.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">36dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">@dimen/mo_action_bar_navigation_padding_start_material</item>
+    </style>
     <!-- ActionBar 样式 -->
     <style name="Widget.Moxm.ActionBar.Solid" parent="Widget.AppCompat.ActionBar.Solid">
         <item name="displayOptions">showTitle|homeAsUp</item><!-- none|useLogo|showHome|homeAsUp|showTitle|showCustom|disableHome -->
         <item name="titleTextStyle">@style/TextAppearance.Moxm.Widget.ActionBar.Title</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Moxm.Widget.ActionBar.Subtitle</item>
 
-        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
-        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="actionButtonStyle">@style/Widget.Moxm.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Moxm.ActionButton.Overflow</item>
 
         <item name="android:gravity">center_vertical</item>
         <item name="contentInsetStart">@dimen/mo_action_bar_content_inset_material</item>
@@ -124,6 +134,10 @@
         <item name="android:paddingRight">8dip</item>
         <item name="android:minWidth">@dimen/mo_action_button_min_width_material</item>
         <item name="android:minHeight">@dimen/mo_action_button_min_height_material</item>
+    </style>
+    <style name="Widget.Moxm.ActionButton.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:paddingLeft">@dimen/mo_action_bar_overflow_padding_start_material</item>
+        <item name="android:paddingRight">@dimen/mo_action_bar_overflow_padding_end_material</item>
     </style>
 
 

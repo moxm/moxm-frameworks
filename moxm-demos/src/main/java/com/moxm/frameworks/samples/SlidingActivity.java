@@ -1,6 +1,7 @@
 package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -30,6 +31,7 @@ public class SlidingActivity extends SlidingFragmentActivity {
         menu.setShadowDrawable(R.drawable.shadow);
         menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
         menu.setFadeDegree(0.35f);
+
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new VelloyFragment()).commit();
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame, new BehindFragment()).commit();
