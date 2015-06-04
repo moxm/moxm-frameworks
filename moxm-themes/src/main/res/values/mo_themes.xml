@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
+    <!-- Base application light theme. -->
     <style name="Theme.Moxm.Light" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
 
@@ -14,8 +14,6 @@
         <!-- colorAccent is used as the default value for colorControlActivated
              which is used to tint widgets -->
         <item name="colorAccent">@color/mo_accent_material_dark</item>
-
-        <item name="elevation">0dp</item>
 
         <item name="actionBarSize">@dimen/mo_action_bar_default_height_material</item>
 
@@ -33,7 +31,105 @@
     </style>
 
 
+    <!-- Base application theme. -->
+    <style name="Theme.Moxm" parent="Theme.AppCompat">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/mo_primary_material_dark</item>
 
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/mo_primary_material_dark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/mo_accent_material_dark</item>
+        <item name="actionBarSize">@dimen/mo_action_bar_default_height_material</item>
+        <!-- 去除ActionBar下面阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <item name="homeAsUpIndicator">@drawable/mo_ic_ab_back_mtrl_am_alpha</item>
+        <item name="actionBarStyle">@style/Widget.Moxm.ActionBar.Solid</item>
+        <item name="actionButtonStyle">@style/Widget.Moxm.ActionButton</item>
+
+
+        <item name="colorControlNormal">?android:attr/textColorSecondary</item>
+        <item name="colorControlActivated">?attr/colorAccent</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="colorButtonNormal">@color/mo_button_material_dark</item>
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
+
+
+        <!-- Window colors -->
+        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
+        <item name="android:colorBackground">@color/mo_background_material_dark</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
+        <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_dark</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@color/mo_background_material_dark</item>
+
+
+        <item name="dividerVertical">@color/mo_list_divider_dark</item>
+        <item name="dividerHorizontal">@color/mo_list_divider_dark</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/mo_primary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/mo_primary_text_material_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/mo_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorSecondary">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorTertiary">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorHint">@color/mo_hint_foreground_material_dark</item>
+        <item name="android:textColorHintInverse">@color/mo_hint_foreground_material_light</item>
+        <item name="android:textColorHighlight">@color/mo_highlighted_text_material_dark</item>
+        <item name="android:textColorLink">@color/mo_link_text_material_dark</item>
+
+    </style>
+    <style name="Theme.Moxm.NoActionBar" parent="Theme.Moxm">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- ActionBar 样式 -->
+    <style name="Widget.Moxm.ActionBar.Solid" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="displayOptions">showTitle|homeAsUp</item><!-- none|useLogo|showHome|homeAsUp|showTitle|showCustom|disableHome -->
+        <item name="titleTextStyle">@style/TextAppearance.Moxm.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Moxm.Widget.ActionBar.Subtitle</item>
+
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="contentInsetStart">@dimen/mo_action_bar_content_inset_material</item>
+        <item name="contentInsetEnd">@dimen/mo_action_bar_content_inset_material</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <!-- ActionBar 标题样式 -->
+    <style name="TextAppearance.Moxm.Widget.ActionBar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/mo_text_size_title_material</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <!-- ActionBar 子标题样式 -->
+    <style name="TextAppearance.Moxm.Widget.ActionBar.Subtitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/mo_text_size_subtitle_material_toolbar</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Moxm.ActionButton" parent="Widget.AppCompat.ActionButton">
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:minWidth">@dimen/mo_action_button_min_width_material</item>
+        <item name="android:minHeight">@dimen/mo_action_button_min_height_material</item>
+    </style>
+
+
+
+
+    <!-- 参考代码 -->
     <style name="Base.Moxm.Theme.AppCompat" parent="Base.V7.Theme.AppCompat">
         <item name="windowActionBar">true</item>
         <item name="windowActionBarOverlay">false</item>
@@ -178,6 +274,44 @@
         <item name="windowFixedWidthMinor">0dp</item>
         <item name="windowFixedHeightMajor">0dp</item>
         <item name="windowFixedHeightMinor">0dp</item>
+
+
+
+
+        <!-- Window colors -->
+        <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
+        <item name="android:colorBackground">@color/background_material_dark</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>
+        <item name="android:disabledAlpha">@dimen/abc_disabled_alpha_material_dark</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@color/background_material_dark</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorTertiary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
+        <item name="android:textColorHintInverse">@color/hint_foreground_material_light</item>
+        <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
+        <item name="android:textColorLink">@color/link_text_material_dark</item>
+
+        <!-- Text styles -->
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.AppCompat.Large.Inverse</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.AppCompat.Small.Inverse</item>
+
+        <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
 
 </resources>

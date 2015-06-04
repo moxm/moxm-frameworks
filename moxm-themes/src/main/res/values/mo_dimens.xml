@@ -14,4 +14,9 @@
 
 
     <dimen name="mo_action_bar_default_height_material">48dp</dimen>
+    <dimen name="mo_text_size_title_material">16sp</dimen>
+    <dimen name="mo_text_size_subtitle_material_toolbar">14sp</dimen>
+    <dimen name="mo_action_button_min_height_material">36dp</dimen>
+    <dimen name="mo_action_button_min_width_material">36dp</dimen>
+    <dimen name="mo_action_bar_content_inset_material">12dp</dimen>
 </resources>

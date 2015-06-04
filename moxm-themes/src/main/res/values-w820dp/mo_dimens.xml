@@ -5,4 +5,5 @@
     <dimen name="activity_horizontal_margin">64dp</dimen>
 
     <dimen name="mo_action_bar_default_height_material">56dp</dimen>
+    <dimen name="mo_action_bar_content_inset_material">18dp</dimen>
 </resources>

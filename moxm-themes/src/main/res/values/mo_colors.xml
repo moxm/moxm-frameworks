@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="mo_primary_material_dark">#ff00ada7</color>
+    <color name="mo_primary_material_dark">#ff3f3c51</color>
     <color name="mo_primary_material_light">#ffefefef</color>
-    <color name="mo_accent_material_dark">#ff7ec486</color>
 
+    <color name="mo_accent_material_dark">#ffff6060</color>
+    <color name="mo_button_material_dark">#ffff6060</color>
+
+    <color name="mo_background_material_dark">#ff3f3c51</color>
+    <color name="mo_list_divider_dark">#ff878d99</color>
+
+    <color name="mo_primary_text_default_material_dark">#ffffffff</color>
+    <color name="mo_primary_text_disabled_material_dark">#4Dffffff</color>
+    <color name="mo_primary_text_default_material_light">#de000000</color>
+    <color name="mo_primary_text_disabled_material_light">#39000000</color>
+
+    <color name="mo_bright_foreground_disabled_material_dark">#80ffffff</color>
+    <color name="mo_bright_foreground_disabled_material_light">#80000000</color>
+    <color name="mo_bright_foreground_material_dark">@android:color/white</color>
+    <color name="mo_bright_foreground_material_light">@android:color/black</color>
+
+    <color name="mo_secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="mo_secondary_text_default_material_light">#8a000000</color>
+    <color name="mo_secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="mo_secondary_text_disabled_material_light">#24000000</color>
+
+    <color name="mo_hint_foreground_material_dark">@color/mo_bright_foreground_disabled_material_dark</color>
+    <color name="mo_hint_foreground_material_light">@color/mo_bright_foreground_disabled_material_light</color>
+
+    <color name="mo_highlighted_text_material_dark">#6680cbc4</color>
+    <color name="mo_highlighted_text_material_light">#66009688</color>
+
+    <color name="mo_link_text_material_dark">@color/mo_material_deep_teal_200</color>
+    <color name="mo_link_text_material_light">@color/mo_material_deep_teal_500</color>
+    <color name="mo_material_deep_teal_200">#ff80cbc4</color>
+    <color name="mo_material_deep_teal_500">#ff009688</color>
 </resources>

@@ -8,7 +8,6 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.moxm.frameworks.samples.event.ContentFragmentEvent;
 import com.moxm.frameworks.samples.otto.BusProvider;
-import com.moxm.frameworks.samples.R;
 import com.squareup.otto.Subscribe;
 
 
@@ -32,11 +31,7 @@ public class SlidingActivity extends SlidingFragmentActivity {
         menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
         menu.setFadeDegree(0.35f);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new VelloyFragment()).commit();
-
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame, new BehindFragment()).commit();
     }
 
@@ -62,7 +57,7 @@ public class SlidingActivity extends SlidingFragmentActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
+//        getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 

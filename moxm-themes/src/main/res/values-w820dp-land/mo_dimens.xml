@@ -1,4 +1,5 @@
 <resources>
 
     <dimen name="mo_action_bar_default_height_material">48dp</dimen>
+    <dimen name="mo_action_bar_content_inset_material">18dp</dimen>
 </resources>
