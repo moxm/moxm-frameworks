@@ -24,4 +24,12 @@
     <dimen name="mo_action_bar_overflow_padding_start_material">4dp</dimen>
 
     <dimen name="mo_action_bar_navigation_padding_start_material">4dp</dimen>
+
+    <dimen name="mo_text_size_body_1_material">14sp</dimen>
+    <dimen name="mo_text_size_large_material">22sp</dimen>
+    <dimen name="mo_text_size_small_material">11sp</dimen>
+    <dimen name="mo_text_size_medium_material">18sp</dimen>
+
+    <dimen name="mo_text_size_subhead_material">14sp</dimen>
+    <dimen name="mo_list_item_padding_horizontal_material">@dimen/mo_action_bar_content_inset_material</dimen>
 </resources>
