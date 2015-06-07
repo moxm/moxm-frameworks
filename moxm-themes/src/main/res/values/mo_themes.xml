@@ -49,15 +49,15 @@
         <item name="dividerHorizontal">@color/mo_list_divider_dark</item>
 
         <!-- Text colors -->
-        <item name="android:textColorPrimary">@color/mo_primary_text_material_dark</item>
-        <item name="android:textColorPrimaryInverse">@color/mo_primary_text_material_light</item>
+        <item name="android:textColorPrimary">@color/mo_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/mo_primary_text_material_dark</item>
         <item name="android:textColorPrimaryDisableOnly">@color/mo_primary_text_disable_only_material_dark</item>
-        <item name="android:textColorSecondary">@color/mo_secondary_text_material_dark</item>
-        <item name="android:textColorSecondaryInverse">@color/mo_secondary_text_material_light</item>
-        <item name="android:textColorTertiary">@color/mo_secondary_text_material_dark</item>
-        <item name="android:textColorTertiaryInverse">@color/mo_secondary_text_material_light</item>
-        <item name="android:textColorHint">@color/mo_hint_foreground_material_dark</item>
-        <item name="android:textColorHintInverse">@color/mo_hint_foreground_material_light</item>
+        <item name="android:textColorSecondary">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorSecondaryInverse">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorTertiary">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorTertiaryInverse">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorHint">@color/mo_hint_foreground_material_light</item>
+        <item name="android:textColorHintInverse">@color/mo_hint_foreground_material_dark</item>
         <item name="android:textColorHighlight">@color/mo_highlighted_text_material_dark</item>
         <item name="android:textColorLink">@color/mo_link_text_material_dark</item>
 
