@@ -1,7 +1,6 @@
 package com.moxm.frameworks.samples;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -15,7 +14,7 @@ import com.squareup.otto.Subscribe;
 /**
  * Created by Richard on 15/5/29.
  */
-public class SlidingActivity extends SlidingFragmentActivity {
+public class MainActivity extends SlidingFragmentActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

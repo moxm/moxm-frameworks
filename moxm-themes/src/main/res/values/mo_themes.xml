@@ -49,15 +49,15 @@
         <item name="dividerHorizontal">@color/mo_list_divider_dark</item>
 
         <!-- Text colors -->
-        <item name="android:textColorPrimary">@color/mo_primary_text_material_light</item>
-        <item name="android:textColorPrimaryInverse">@color/mo_primary_text_material_dark</item>
+        <item name="android:textColorPrimary">@color/mo_primary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/mo_primary_text_material_light</item>
         <item name="android:textColorPrimaryDisableOnly">@color/mo_primary_text_disable_only_material_dark</item>
-        <item name="android:textColorSecondary">@color/mo_secondary_text_material_light</item>
-        <item name="android:textColorSecondaryInverse">@color/mo_secondary_text_material_dark</item>
-        <item name="android:textColorTertiary">@color/mo_secondary_text_material_light</item>
-        <item name="android:textColorTertiaryInverse">@color/mo_secondary_text_material_dark</item>
-        <item name="android:textColorHint">@color/mo_hint_foreground_material_light</item>
-        <item name="android:textColorHintInverse">@color/mo_hint_foreground_material_dark</item>
+        <item name="android:textColorSecondary">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorTertiary">@color/mo_secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/mo_secondary_text_material_light</item>
+        <item name="android:textColorHint">@color/mo_hint_foreground_material_dark</item>
+        <item name="android:textColorHintInverse">@color/mo_hint_foreground_material_light</item>
         <item name="android:textColorHighlight">@color/mo_highlighted_text_material_dark</item>
         <item name="android:textColorLink">@color/mo_link_text_material_dark</item>
 
@@ -70,6 +70,12 @@
         <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Moxm.Medium.Inverse</item>
         <item name="android:textAppearanceSmall">@style/TextAppearance.Moxm.Small</item>
         <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Moxm.Small.Inverse</item>
+
+        <!-- EditText styles -->
+        <item name="editTextStyle">@style/Widget.Moxm.EditText</item>
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+        <item name="editTextColor">?android:attr/textColorPrimary</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
         <!-- List attributes -->
         <item name="textAppearanceListItem">@style/TextAppearance.Moxm.Subhead</item>
@@ -204,6 +210,11 @@
         <item name="android:dividerHeight">1px</item>
         <item name="android:fadingEdge">none</item>
         <item name="android:fadingEdgeLength">0dp</item>
+    </style>
+    <style name="Widget.Moxm.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">?attr/editTextBackground</item>
+        <item name="android:textColor">?attr/editTextColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
     </style>
 
 

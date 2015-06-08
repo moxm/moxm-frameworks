@@ -10,18 +10,20 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Moxm" >
         <activity
-            android:name=".SlidingActivity"
-            android:logo="@drawable/mo_ic_ab_back_mtrl_am_alpha"
-            android:label="@string/app_name" >
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Moxm.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+        <activity
             android:name=".ToolbarActivity"
             android:label="@string/app_name"
-            android:logo="@drawable/mo_ic_ab_back_mtrl_am_alpha"
             android:theme="@style/Theme.Moxm.NoActionBar"/>
     </application>
 
