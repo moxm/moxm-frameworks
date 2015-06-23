@@ -21,6 +21,7 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
     private Button button1;
     private Button button2;
     private Button button3;
+    private Button button4;
 
 
     @Nullable
@@ -50,6 +51,7 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
         button1 = (Button) getView().findViewById(R.id.button1);
         button2 = (Button) getView().findViewById(R.id.button2);
         button3 = (Button) getView().findViewById(R.id.button3);
+        button4 = (Button) getView().findViewById(R.id.button4);
     }
     /**
      * 设置监听事件
@@ -58,6 +60,7 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
     /**
      * 加载填充数据
@@ -92,6 +95,10 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
             case R.id.button3:
                 Fragment content3 = new UiFragment();
                 BusProvider.getInstance().post(produceContentEvent(content3));
+                break;
+            case R.id.button4:
+                Fragment content4 = new ScrollViewFragment();
+                BusProvider.getInstance().post(produceContentEvent(content4));
                 break;
         }
     }
