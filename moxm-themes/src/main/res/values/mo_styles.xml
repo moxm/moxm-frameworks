@@ -1,5 +1,7 @@
 <resources>
 
-
+    <declare-styleable name="Theme">
+        <attr format="color" name="colorHaha"/>
+    </declare-styleable>
 
 </resources>

@@ -5,6 +5,7 @@
     <style name="Theme.Moxm" parent="Theme.AppCompat">
         <!-- colorPrimary is used for the default action bar background -->
         <item name="colorPrimary">@color/mo_primary_material_dark</item>
+        <item name="colorHaha">#ff00ff</item>
 
         <!-- colorPrimaryDark is used for the status bar -->
         <item name="colorPrimaryDark">@color/mo_primary_material_dark</item>
