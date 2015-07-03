@@ -74,7 +74,8 @@
 
         <!-- EditText styles -->
         <item name="editTextStyle">@style/Widget.Moxm.EditText</item>
-        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+        <item name="editTextTestStyle">@style/Widget.Moxm.EditText.Test</item>
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item><!-- abc_edit_text_material 文件名不能修改,只能覆盖,否则背景颜色不能跟随colorAccent 的改变而改变 -->
         <item name="editTextColor">?android:attr/textColorPrimary</item>
         <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
@@ -215,6 +216,11 @@
     <style name="Widget.Moxm.EditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">?attr/editTextBackground</item>
         <item name="android:textColor">?attr/editTextColor</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+    </style>
+    <style name="Widget.Moxm.EditText.Test" parent="Widget.Moxm.EditText">
+        <item name="android:background">?attr/editTextBackground</item>
+        <item name="android:textColor">?attr/colorHaha</item>
         <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
     </style>
 

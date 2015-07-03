@@ -1,7 +1,8 @@
 <resources>
 
     <declare-styleable name="Theme">
-        <attr format="color" name="colorHaha"/>
+        <attr name="colorHaha" format="color"/>
+        <attr name="editTextTestStyle" format="reference"/>
     </declare-styleable>
 
 </resources>
