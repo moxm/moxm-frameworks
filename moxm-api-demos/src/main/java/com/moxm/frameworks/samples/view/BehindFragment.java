@@ -1,4 +1,4 @@
-package com.moxm.frameworks.samples;
+package com.moxm.frameworks.samples.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,23 +6,26 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.moxm.frameworks.samples.R;
 import com.moxm.frameworks.samples.event.ContentFragmentEvent;
 import com.moxm.frameworks.samples.otto.BusProvider;
+import com.moxm.frameworks.samples.view.design.DesignFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Created by Richard on 15/6/2.
  */
-public class BehindFragment extends Fragment implements View.OnClickListener {
+public class BehindFragment extends Fragment implements AdapterView.OnItemClickListener {
 
 
-    private Button button1;
-    private Button button2;
-    private Button button3;
-    private Button button4;
-
+    private ListView mListView;
 
     @Nullable
     @Override
@@ -41,33 +44,36 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
     }
 
     protected void init(Bundle savedInstanceState) {
-
     }
 
     /**
      * 获取View对象
      */
     protected void fillView() {
-        button1 = (Button) getView().findViewById(R.id.button1);
-        button2 = (Button) getView().findViewById(R.id.button2);
-        button3 = (Button) getView().findViewById(R.id.button3);
-        button4 = (Button) getView().findViewById(R.id.button4);
+        mListView = (ListView) getView().findViewById(R.id.list);
     }
     /**
      * 设置监听事件
      */
     protected void setListener() {
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
-        button4.setOnClickListener(this);
+        mListView.setOnItemClickListener(this);
     }
     /**
      * 加载填充数据
      */
     protected void loadData() {
-
+        mListView.setAdapter(new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1,
+                getData()));
     }
+
+    private List<String> getData() {
+        List<String> data = new ArrayList<String>();
+        data.add("Design");
+        return data;
+    }
+
 
     @Override
     public void onResume() {
@@ -82,6 +88,17 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        ArrayAdapter<String> adapter = (ArrayAdapter)parent.getAdapter();
+        String value = adapter.getItem(position);
+        if (value.equals("Design")) {
+            Fragment content = new DesignFragment();
+            BusProvider.getInstance().post(produceContentEvent(content));
+            return;
+        }
+    }
+
+    /*
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
@@ -101,10 +118,12 @@ public class BehindFragment extends Fragment implements View.OnClickListener {
                 BusProvider.getInstance().post(produceContentEvent(content4));
                 break;
         }
-    }
+    }*/
 
 //    @Produce
     public ContentFragmentEvent produceContentEvent(Fragment content){
         return new ContentFragmentEvent(content);
     }
+
+
 }

@@ -31,4 +31,5 @@ dependencies {
     compile 'com.mcxiaoke.volley:library:1.0.+@aar'
     compile project(':library-smenu')
     compile project(':moxm-themes')
+    compile project(':moxm-support')
 }

@@ -1,9 +1,11 @@
-package com.moxm.frameworks.samples;
+package com.moxm.frameworks.samples.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
+import com.moxm.frameworks.samples.MainActivity;
+import com.moxm.frameworks.samples.R;
 import com.moxm.frameworks.samples.event.LoginSuccessEvent;
 import com.moxm.frameworks.samples.otto.BusProvider;
 import com.squareup.otto.Subscribe;

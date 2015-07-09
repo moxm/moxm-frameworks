@@ -1,4 +1,4 @@
-package com.moxm.frameworks.samples;
+package com.moxm.frameworks.samples.view;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +10,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
+
+import com.moxm.frameworks.samples.R;
 
 /**
  * Created by Richard on 15/6/2.

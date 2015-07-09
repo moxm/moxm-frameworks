@@ -1,4 +1,4 @@
-package com.moxm.frameworks.samples;
+package com.moxm.frameworks.samples.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.moxm.frameworks.samples.R;
 
 import java.util.ArrayList;
 import java.util.List;

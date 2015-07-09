@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ToolbarActivity"
+            android:name=".view.ToolbarActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Moxm.NoActionBar"/>
     </application>

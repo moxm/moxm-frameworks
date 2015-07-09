@@ -8,6 +8,8 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.moxm.frameworks.samples.event.ContentFragmentEvent;
 import com.moxm.frameworks.samples.otto.BusProvider;
+import com.moxm.frameworks.samples.view.BehindFragment;
+import com.moxm.frameworks.samples.view.design.DesignFragment;
 import com.squareup.otto.Subscribe;
 
 
@@ -32,7 +34,7 @@ public class MainActivity extends SlidingFragmentActivity {
         menu.setFadeDegree(0.35f);
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, new VelloyFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new DesignFragment()).commit();
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame, new BehindFragment()).commit();
     }
 

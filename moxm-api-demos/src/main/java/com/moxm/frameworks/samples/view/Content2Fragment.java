@@ -1,4 +1,4 @@
-package com.moxm.frameworks.samples;
+package com.moxm.frameworks.samples.view;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
