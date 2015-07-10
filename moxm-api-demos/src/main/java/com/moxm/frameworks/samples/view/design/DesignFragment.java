@@ -74,6 +74,7 @@ public class DesignFragment extends Fragment implements AdapterView.OnItemClickL
         List<String> data = new ArrayList<String>();
         data.add("Snackbar");
         data.add("TextInputLayout");
+        data.add("TabLayout");
         return data;
     }
 
@@ -103,10 +104,15 @@ public class DesignFragment extends Fragment implements AdapterView.OnItemClickL
             BusProvider.getInstance().post(produceContentEvent(content));
             return;
         }
+        if (value.equals("TabLayout")) {
+            Fragment content = new TabFragment();
+            BusProvider.getInstance().post(produceContentEvent(content));
+            return;
+        }
     }
 
 
-    private void showSnackbar(View view){
+    private void showSnackbar(View view) {
         Snackbar.make(view, "Snackbar comes out", Snackbar.LENGTH_LONG)
                 .setAction("CLOSE", new View.OnClickListener() {
                     @Override
