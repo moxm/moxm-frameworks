@@ -14,6 +14,7 @@ import com.moxm.frameworks.samples.R;
 import com.moxm.frameworks.samples.event.ContentFragmentEvent;
 import com.moxm.frameworks.samples.otto.BusProvider;
 import com.moxm.frameworks.samples.view.design.DesignFragment;
+import com.moxm.frameworks.samples.view.volley.VolleyFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,6 +72,7 @@ public class BehindFragment extends Fragment implements AdapterView.OnItemClickL
     private List<String> getData() {
         List<String> data = new ArrayList<String>();
         data.add("Design");
+        data.add("Volley");
         return data;
     }
 
@@ -93,6 +95,10 @@ public class BehindFragment extends Fragment implements AdapterView.OnItemClickL
         String value = adapter.getItem(position);
         if (value.equals("Design")) {
             Fragment content = new DesignFragment();
+            BusProvider.getInstance().post(produceContentEvent(content));
+            return;
+        }if (value.equals("Volley")) {
+            Fragment content = new VolleyFragment();
             BusProvider.getInstance().post(produceContentEvent(content));
             return;
         }
