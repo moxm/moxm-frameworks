@@ -4,4 +4,10 @@
     <item android:id="@+id/action_message" android:title="@string/action_message"
         android:icon="@drawable/ic_nine"
         app:showAsAction="always" />
+    <item android:id="@+id/action_message2" android:title="@string/action_message"
+        android:icon="@drawable/ic_nine"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_message3" android:title="@string/action_message"
+        android:icon="@drawable/ic_nine"
+        app:showAsAction="never" />
 </menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction"/>
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="Theme">
+        <attr name="alertCancelButtonStyle" format="reference"/>
+        <attr name="alertConfirmButtonStyle" format="reference"/>
+        <attr name="alertStyle" format="reference"/>
+        <attr name="alertBackground" format="reference"/>
+        <attr name="textColorAlert" format="color"/>
+
+
+
+        <attr name="loadingSize" format="dimension"/>
+        <attr name="loadingBackground" format="reference"/>
+        <attr name="wheelSize" format="dimension"/>
+        <attr name="wheelColor" format="dimension"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+</resources>

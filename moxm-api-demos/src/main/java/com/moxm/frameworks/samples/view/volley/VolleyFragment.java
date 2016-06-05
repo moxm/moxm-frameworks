@@ -210,7 +210,7 @@ public class VolleyFragment extends Fragment implements View.OnClickListener {
                         entity.addStringPart("messageBody", "测试");
                         entity.addStringPart("receiveTime", "2015-03-04 14:22:00");
 
-                        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/S50715-153423.jpg");
+                        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/Camera/1441454427634.jpg");
                         entity.addFilePart("images", file);
                         /*
                         file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/P50713-183019.jpg");
@@ -219,7 +219,11 @@ public class VolleyFragment extends Fragment implements View.OnClickListener {
                         file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/P50723-224405.jpg");
                         entity.addFilePart("images", file);*/
 
-                        file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/P50723-224412.jpg");
+                        Log.d("DCIM", "--------->" + Environment.getExternalStorageDirectory().getAbsolutePath());
+                        file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/Camera/IMG_20150606_104258.jpg");
+                        entity.addFilePart("images", file);
+
+                        file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/DCIM/Camera/IMG_20150905_201850.jpg");
                         entity.addFilePart("images", file);
 
                         Map<String, byte[]> params = new HashMap<String, byte[]>();

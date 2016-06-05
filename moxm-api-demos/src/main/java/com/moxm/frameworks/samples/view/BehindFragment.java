@@ -1,5 +1,6 @@
 package com.moxm.frameworks.samples.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -73,6 +74,7 @@ public class BehindFragment extends Fragment implements AdapterView.OnItemClickL
         List<String> data = new ArrayList<String>();
         data.add("Design");
         data.add("Volley");
+        data.add("Toolbar");
         return data;
     }
 
@@ -97,9 +99,15 @@ public class BehindFragment extends Fragment implements AdapterView.OnItemClickL
             Fragment content = new DesignFragment();
             BusProvider.getInstance().post(produceContentEvent(content));
             return;
-        }if (value.equals("Volley")) {
+        }
+        if (value.equals("Volley")) {
             Fragment content = new VolleyFragment();
             BusProvider.getInstance().post(produceContentEvent(content));
+            return;
+        }
+        if (value.equals("Toolbar")) {
+            Intent intent = new Intent(getActivity(), ToolbarActivity.class);
+            startActivity(intent);
             return;
         }
     }
