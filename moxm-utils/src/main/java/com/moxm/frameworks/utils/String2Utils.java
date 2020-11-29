@@ -10,9 +10,9 @@ import java.util.regex.Pattern;
  * 
  * @author <a href="http://www.moxm.com" target="_blank">Moxm</a> 2011-7-22
  */
-public class StringUtils {
+public class String2Utils {
 
-    private StringUtils() {
+    private String2Utils() {
         throw new AssertionError();
     }
 
